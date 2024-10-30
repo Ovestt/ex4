@@ -10,6 +10,15 @@ namespace ex4
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите N - ");
+            uint N = uint.Parse(Console.ReadLine());
+            long squareN = 0; 
+            for (int i = 1; i <= N; i++)
+            {
+                squareN += 2 * i - 1;
+                Console.WriteLine("{0}^2 - {1}",i, squareN);
+            }
+            Console.ReadKey();
         }
     }
 }
